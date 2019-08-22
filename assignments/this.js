@@ -16,66 +16,66 @@
 // code example for Window Binding
 
 
-// const theFunction = function () {
+const theFunction = function () {
 
-//   console.log(this);
+  console.log(this);
 
-// };
+};
 
-// theFunction();
+theFunction();
 
 
 // Principle 2
 
 // code example for Implicit Binding
 
-// const myUser = {
+const myUser = {
 
-//   name: 'Nikola',
-//   age: 33,
-//   talk: function () {
+  name: 'Nikola',
+  age: 33,
+  talk: function () {
 
-//     console.log("hello, my name is" + this.name)
+    console.log("hello, my name is" + this.name)
 
-//   }
-// }
+  }
+}
 
-// myUser.talk('Luis');
+myUser.talk('Luis');
 
 // Principle 3
 
 // code example for New Binding
 
-// function sayHello(name) {
+function sayHello(name) {
 
-//   this.name = name,
-//     this.lastName = lastName,
-//     this.speak = function () {
+    this.name = name,
+    this.lastName = lastName,
+    this.speak = function () {
 
-//       console.log("Hi!, name is" + this.name + this.lastName);
+      console.log("Hi!, name is" + this.name + this.lastName);
 
-//     }
-// };
+    }
+};
 
-// let newUser = new sayHello('Leo');
-// let newUSer01 = new sayHello('Tesla');
+let newUser = new sayHello('Leo');
+let newUSer01 = new sayHello('Tesla');
 
 // Principle 4
 
 // code example for Explicit Binding
 
-// const userFile = {
+const userFile = {
 
-//   name= 'Luis',
-//   lastName= 'Gomez',
-//   age= 33,
-// };
+  name= 'Luis',
+  lastName= 'Gomez',
+  age= 33,
+};
 
-// function sayHello(user) {
+function sayHello(user) {
 
-//   console.log("Hi!, name is" + this.name)
+  console.log("Hi!, name is" + this.name)
 
-// }
+}
 
-// sayHello.call(user)
+sayHello.call(user)
 
